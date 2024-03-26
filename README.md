@@ -8,6 +8,12 @@ This project uses the React.js framework.
 
 Builds are accomplished with standard node/React scripts.
 
+Set the PORT for your app to start at by specifying the 
+PORT environment variable in the .env file on the root directory
+of the project. 
+
+For this GPT version of IARE, the appi s deployed on PORT 3000.
+
 From the project directory:
 
 ### `npm start`
@@ -47,7 +53,7 @@ Run a container from the newly built image:
 $ docker container run --rm -it -p 3000:3000 iare
 ````
 
-If you are running this locally, you casn open the application in a web browser at http://localhost:3000
+If you are running this locally, you can open the application in a web browser at http://localhost:3000
 
 ## Under the Hood
 

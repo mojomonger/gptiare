@@ -13,6 +13,7 @@ import {ArticleVersions} from "./constants/articleVersions";
 
 export default function App({env, myPath, myRefresh, myMethod, myArticleVersion, myIariSourceId, myDebug}) {
 
+    const appTitle="GPT Internet Archive Reference Explorer"
     const [isDebug, setDebug] = useState(myDebug);
 
     // these are config values to show/hide certain UI features, available from debug info box
@@ -338,7 +339,7 @@ export default function App({env, myPath, myRefresh, myMethod, myArticleVersion,
             // up and down triangles:  onClick={toggleDebug} >{isDebug ? <>&#9650;</> : <>&#9660;</>}</button>
 
     const heading = <div className={"header-contents"}>
-        <h1>Internet Archive Reference Explorer</h1>
+        <h1>{appTitle}</h1>
         <div className={"header-aux1"}>version {iareVersion}{siteDisplay}{showHideDebugButton}</div>
     </div>
 
