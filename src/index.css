@@ -1,0 +1,381 @@
+:root {
+    --color-debug-background: #b4df5e;
+
+    --color-text: black;
+    --color-text-muted: grey;
+
+    --color-list-fg-selected: #054630; /*#1c654f;*/
+    --color-list-bg-selected: #ceefd9; /*#c4e4c8;*/
+    --color-list-fg-hover: #fffde5; /*blue;*/
+
+    --color-list-bg-hover: #9ccfe5;
+    /*--color-list-bg-hover: #81c8e7;*/
+    /*--color-list-bg-hover: #CFF0FF;*/
+    /*--color-list-bg-hover: #cfdeff;*/
+
+    --color-list-header-bg: #cff0ff;
+
+    --color-button-bg: #81c8e7;
+    --color-button-bg-hover: white;
+
+    --color-h3: #666666;
+    --color-h4: #808080;
+
+    --color-debug-lite: #a8a8a8;
+
+    /* status codes colors */
+    --color-http-unknown: #000000;
+    --color-http-unknown-bg: #c9cbcf;
+    --color-http-success: #ffffff;
+    --color-http-success-bg: #20cc1e; /*#4bc0c0; teal*/
+    --color-http-redirect: #000000;
+    --color-http-redirect-bg: #ffcd57;
+    --color-http-notfound: #ffffff;
+    --color-http-notfound-bg: #ff6384;
+    --color-http-error: #FFFFFF;
+    --color-http-error-bg: #f763ff;
+
+    --font-size-debug-section:.8rem;
+    --font-weight-debug-section:normal;
+
+    /* heights of lists - NB: should be dynamic */
+    /*--height-list: 68vh;*/
+    --height-list: 63.5vh;
+    --height-list-pdf: 70vh;
+    --border-list:1px solid black;
+
+    --radio-button-magnify:1.35;
+
+}
+
+html {
+    font-size:20px; /* this defines the "rem" size */
+}
+
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 15px 20px 20px;
+}
+
+/* global-ish */
+
+.no-padding {
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
+/* specific to iari */
+
+.iare-view .header h1 {
+    position:relative;
+    z-index: 10;
+    margin-top:0;
+    margin-bottom: 0.5rem;
+    padding-left:.3rem;
+    font-size:2em;
+    font-weight:bold;
+}
+
+/* environment specific */
+
+body .iare-view .header h1 {
+    color:red;
+}
+body.env-production .iare-view .header h1 {
+    color:#e30040;
+}
+body.env-local .iare-view .header h1 {
+    color: #1acf84;
+}
+
+/* iari-view specific */
+
+.iare-view {
+    display: flex;
+    flex-direction: column;
+}
+.iare-view h3 {
+    color:var(--color-h3);
+}
+.iare-view h4 {
+    color:var(--color-h4);
+}
+.iare-view .inferior {
+    font-size:88%;
+}
+
+.iare-view .header {
+    display: flex;
+    flex-direction: column;
+}
+.iare-view .header-contents {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.header-aux1 {
+    padding-top: 0.65rem;
+    font-weight: normal;
+    color: grey;
+}
+body.env-production .header-aux1 span.non-production {
+    display:none;
+}
+body.env-other .header-aux1-display span.non-production {
+    display:inherit;
+}
+
+/* debug elements */
+
+.debug-section {
+    border: 1px black solid;
+    padding: 0.5rem 1rem 0;
+    background: #2f357d;
+    color: white;
+    border-radius: .85rem;
+    font-size:var(--font-size-debug-section);
+    font-weight:var(--font-weight-debug-section);
+}
+.debug-section.debug-on {
+    display: block;
+}
+.debug-section.debug-off {
+    display: none;
+}
+.debug-section > p {
+    margin-bottom: .67rem;
+}
+.debug-section a {
+    color:lightskyblue;
+}
+.debug-section button {
+    margin-bottom:.75rem;
+}
+.debug-section .label,  /* label class span within element */
+.debug-section label    /* label element */
+{
+    color: var(--color-debug-lite) !important;
+}
+.debug-section .choice-wrapper {
+    color:black;
+    margin-bottom:.75rem;
+}
+
+
+
+/* utility buttons (including debug buttons */
+
+button.utility-button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    transition: background-color .25s ease-out, color .25s ease-out;
+
+    border: 1px solid transparent;
+    border-radius: .3rem;
+    padding: .28rem .42rem;
+    margin: 0 0 .5rem .5rem;
+    vertical-align: middle;
+    font-size: .69rem;
+
+    background-color: #2199e8;
+    color: #fefefe
+}
+button.utility-button.small-button {
+    padding: 0.3em 0.55em 0.25em 0.4em;
+    font-size: 80%;
+    margin: -0.4rem 0 0 0.2rem;
+    background-color: #d3d3d3;
+    color: #4d4d4d;
+    border-color: #888888;
+}
+
+
+.utility-button:focus, .utility-button:hover {
+    background-color: #1583cc;
+    color: #fefefe
+}
+
+
+.utility-button.debug-button {
+    background-color: #2199e8;
+    color: #fefefe;
+    margin: 0 0 .5rem 0;
+    padding: 0.31rem 0.5rem 0.25rem
+}
+
+.more-button {
+    background-color: transparent;
+    border:none;
+    text-decoration: underline;
+    color:grey;
+}
+.more-page-info-button {
+    margin-left:.5rem;
+    color: #b6b4b4;
+}
+.page-details-table {
+    display:none !important;
+}
+
+
+/* choice selections */
+
+.choice-wrapper{
+    display:inline-block;
+    margin-left: .5rem;
+}
+.iari-source-wrapper {
+    margin-left: 0;
+}
+.choice-wrapper select {
+    margin-left:.3rem;
+}
+
+
+/* OTHER ELEMENTS - to be organized as time goes on */
+
+.detail-section {
+    background-color: #aad4d8;
+    border-radius:.8rem;
+    padding:.5rem;
+}
+.detail-show {
+    display:inherit;
+    margin-bottom:1rem;
+}
+.detail-hide {
+    display:none;
+}
+ol, ul {
+    padding-left: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+table td {
+    margin:0;
+    padding:4px;
+    border:1px solid black;
+    vertical-align: top;
+}
+
+
+.error-display {
+    display:block;
+    margin:1rem 0;
+    border:2pt solid #c92b2b;
+    padding:.5em;
+    font-weight: bold;
+    font-size:1.2rem;
+    color: #c92b2b;
+}
+.error-display-none {
+    display:none;
+}
+.error-display-many {
+    font-size:1rem;
+    font-weight:normal;
+}
+.error-display-many .title {
+    font-weight:bold;
+}
+table.single-detail {
+    table-layout: fixed;
+    width:24rem;
+}
+table.single-detail tr td:not(:first-child) {
+    width:19rem;
+}
+
+
+.iare-view .path-fetch {
+    padding: 1rem 1rem 0;
+    margin-top:.5rem;
+    margin-bottom:.25rem;
+
+    border:1px solid black;
+}
+.path-fetch-wrap {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+}
+.path-fetch #pathInput {
+    width:29rem;
+    font-size: .9rem;
+    padding: 2pt 2pt 2pt 4pt;
+    border:1px solid dimgrey;
+}
+.path-fetch #pathInput::placeholder {
+    color: #a0a0a0;
+}
+
+.path-input-wrapper {
+    marginBottom: .5rem;
+    display:contents;  /* NB chatGPT syas display: copntents is not supported by IE */
+}
+
+@media screen and (max-width: 800px) {
+    /*.path-input-wrapper {*/
+    /*    marginBottom: .5rem;*/
+    /*    display:contents;*/
+    /*}*/
+
+    .path-fetch #pathInput {
+        width:100%;
+    }
+}
+
+.path-fetch #pathInput-label {
+    color:dimgrey;
+    margin-right:.25em;
+    font-size:.9rem;
+    padding-top: 0.175rem;
+}
+
+.path-fetch .path-shortcut {
+    margin-left:10px;
+}
+
+.path-fetch-wrap button {
+    margin-top:.35em;
+}
+
+.path-fetch-wrap .chk-force-refresh {
+    margin-top:.65em;
+    margin-left: .5rem;
+    margin-right: .25rem;
+}
+.path-fetch-wrap .chk-force-refresh input[type=checkbox] {
+    margin-right: .25rem;
+}
+
+/* defaults for ChoiceFetch component */
+
+.choice-fetch-items {
+    display:flex;
+    flex-direction:column;
+    margin-bottom:.5rem;
+    font-size: .85rem;
+    color:var(--color-h4)
+}
+.choice-fetch-item {
+    margin-left: .8rem;
+}
+
+.list-instruction {
+font-style:italic;
+font-weight:normal;
+}
+
+.tooltip-active {
+    cursor: pointer;
+}
