@@ -390,9 +390,19 @@ export default function App({env, myPath, myRefresh, myMethod, myArticleVersion,
         {debugButtonShortcuts}
         </>
 
+    const vercelInfo = <div>
+        <p style={{marginBottom: 0}}><span className={'label'}>Vercel:</span></p>
+        <div className={"indent-info"}>{Object.keys(process.env).map( key =>{
+            return <p key={key}><span className={'label'}>{key}:</span> {process.env[key]}</p>
+        })}
+        </div>
+    </div>
+
+
     const debug = <div className={"debug-section " + (isDebug ? "debug-on" : "debug-off")}>
         <div style={{marginBottom:".5rem"}}
             >{iariChoiceSelect} {methodChoiceSelect} {articleVersionChoiceSelect}</div>
+        {vercelInfo}
         <p><span className={'label'}>Environment:</span> {env} (host: {window.location.host})</p>
         <p><span className={'label'}>IARE Version:</span> {iareVersion}</p>
         <p><span className={'label'}>IARI Source:</span> {myIariSourceId} ({IariSources[myIariSourceId]?.proxy})</p>

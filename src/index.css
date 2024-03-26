@@ -379,3 +379,14 @@ font-weight:normal;
 .tooltip-active {
     cursor: pointer;
 }
+
+.indent-info {
+    margin-left: 1.5rem;
+    margin-top: 0;
+
+    font-size: .9rem;
+    color: var(--color-h4);
+}
+.indent-info p {
+    margin-bottom: .25rem;
+}
