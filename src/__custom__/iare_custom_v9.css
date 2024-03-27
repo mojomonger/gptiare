@@ -1,0 +1,20 @@
+:root {
+    --g-color-body-bg: #1a1a1a; /* Dark background for a gritty look */
+
+    --g-color-h1-fg: #ff0090; /* Neon pink for headings to stand out */
+
+    --g-color-list-header-fg: #8af; /* Electric blue for list headers foreground */
+    --g-color-list-header-bg: #342244; /* Dark purple for list headers background, maintaining legibility */
+
+    --g-color-function-box-caption-fg: #FFFFFF; /* White remains for contrast */
+    --g-color-function-box-caption-bg: #ff007f; /* Brighter pink for function box captions */
+    --g-color-function-box-caption-outline: #ff5500; /* Neon orange for outlines, adds vibrancy */
+    --g-color-function-box-contents: hsl(260deg, 100%, 50%); /* Saturated purple for contents, keeping the cyberpunk vibe */
+
+    --g-color-flock-box-caption-fg: #FFFFFF; /* White for readability */
+    --g-color-flock-box-caption-bg: #00ffea; /* Neon cyan for a striking contrast against dark backgrounds */
+
+    --g-color-reference-display-bg: hsl(240, 70%, 20%); /* Dark blue for reference display backgrounds, adding depth */
+    --g-color-reference-display-fg: #39FF14; /* Neon green for text, ensuring it pops */
+    --g-color-reference-display-selected-bg: hsl(290, 100%, 30%); /* Dark magenta for selected backgrounds, enriching the palette */
+}

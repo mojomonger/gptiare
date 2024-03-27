@@ -1,0 +1,33 @@
+:root {
+    /* Body Background - Light frosty blue, simulating the light reflection on snow */
+    --g-color-body-bg: #d6e5e5;
+
+    /* Header 1 Foreground - Deep winter midnight blue, reminiscent of clear winter nights */
+    --g-color-h1-fg: #224de8;
+
+    /* List Header Foreground - Soft winter morning sky, a light blue */
+    --g-color-list-header-fg: #e6f2f6;
+    /* List Header Background - Ice cave blue, a bit darker to stand out against the lighter foreground */
+    --g-color-list-header-bg: #82ace6;
+
+    /* Function Box Caption Foreground - Bright snow white, unchanged as it suits winter theme */
+    --g-color-function-box-caption-fg: #FFFFFF;
+    /* Function Box Caption Background - Frozen lake surface, a deeper shade of blue */
+    --g-color-function-box-caption-bg: #2569d6;
+    /* Function Box Caption Outline - Twilight shadow, a darker blue for contrast */
+    --g-color-function-box-caption-outline: #194e82;
+    /* Function Box Contents - Soft winter daylight, keeping the lightness similar */
+    --g-color-function-box-contents: hsl(202deg, 70.97%, 86.73%);
+
+    /* Flock Box Caption Foreground - Snow white, unchanged for readability */
+    --g-color-flock-box-caption-fg: #FFFFFF;
+    /* Flock Box Caption Background - Evening winter sky, a muted dark blue */
+    --g-color-flock-box-caption-bg: #174a94;
+
+    /* Reference Display Background - Cold morning mist, a very light blue with a hint of grey */
+    --g-color-reference-display-bg: hsl(206, 47%, 84%);
+    /* Reference Display Foreground - Black, unchanged for best readability */
+    --g-color-reference-display-fg: black;
+    /* Reference Display Selected Background - Frost on window glass, even lighter than the background */
+    --g-color-reference-display-selected-bg: hsl(205, 100%, 97%);
+}
