@@ -1,0 +1,20 @@
+:root {
+    --g-color-h1-fg: #e0e0e0; /* A light gray for headings, akin to the muted highlights in noir visuals */
+
+    --g-color-body-bg: #2a2a2a; /* Dark gray, almost black, for the body background, creating a moody base */
+
+    --g-color-list-header-fg: #ffffff; /* White for list header foreground, providing stark contrast */
+    --g-color-list-header-bg: #4d4d4d; /* Medium gray for list header background, suggesting the nuanced mid-tones of noir film */
+
+    --g-color-function-box-caption-fg: #FFFFFF; /* White remains for contrast against the darker background */
+    --g-color-function-box-caption-bg: #333333; /* Very dark gray for function box caption background, deepening the noir aesthetic */
+    --g-color-function-box-caption-outline: #1a1a1a; /* Nearly black, used for outlines to add depth and shadow */
+    --g-color-function-box-contents: hsl(0, 0%, 50%); /* A neutral gray for contents, keeping with the monochromatic theme */
+
+    --g-color-flock-box-caption-fg: #FFFFFF; /* White, offering a sharp contrast for the flock box caption */
+    --g-color-flock-box-caption-bg: #5c5c5c; /* Darker gray, adding a slightly lighter 'highlight' effect within the noir theme */
+
+    --g-color-reference-display-bg: hsl(0, 0%, 46%); /* A slightly lighter gray for reference display background, aiding readability */
+    --g-color-reference-display-fg: black; /* Black for text, ensuring maximum contrast and legibility */
+    --g-color-reference-display-selected-bg: hsl(0, 0%, 30%); /* Dark gray for selected items, subtly standing out in the noir palette */
+}
