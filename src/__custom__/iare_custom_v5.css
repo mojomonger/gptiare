@@ -1,0 +1,20 @@
+:root {
+    --g-color-h1-fg: #4CAF50; /* Vibrant forest green for headings */
+
+    --g-color-body-bg: #E8F5E9; /* Light green, reminiscent of sunlight filtering through leaves */
+
+    --g-color-list-header-fg: #F1F8E9; /* Very light green for list header text */
+    --g-color-list-header-bg: #8BC34A; /* Light vibrant green for list header background */
+
+    --g-color-function-box-caption-fg: #FFFFFF; /* White for contrast against the dark green function box caption background */
+    --g-color-function-box-caption-bg: #388E3C; /* Deep green, reflecting the dense parts of a forest */
+    --g-color-function-box-caption-outline: #1B5E20; /* Even deeper green for the outline, simulating the forest's depth */
+    --g-color-function-box-contents: hsl(120deg, 39%, 75%); /* Soft green, maintaining the thematic consistency */
+
+    --g-color-flock-box-caption-fg: #FFFFFF; /* White, ensuring readability against the caption background */
+    --g-color-flock-box-caption-bg: #2E7D32; /* Dark green, suggestive of the foliage in a forest */
+
+    --g-color-reference-display-bg: hsl(120deg, 34%, 80%); /* Light green, like moss or the undergrowth */
+    --g-color-reference-display-fg: black; /* Black for text, ensuring legibility */
+    --g-color-reference-display-selected-bg: hsl(120deg, 60%, 90%); /* Very light green, highlighting selected items */
+}

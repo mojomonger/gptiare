@@ -1,0 +1,34 @@
+:root {
+    --g-color-h1-fg: #e25524; /* Orange shade similar in intensity to original pink */
+
+    --g-color-body-bg: #f3e0d5; /* Very light orange, analogous to the light purple background */
+
+    --g-color-list-header-fg: #f8edd6; /* Lighter orange for foreground text */
+    --g-color-list-header-bg: #f07c2d; /* Vibrant orange for background */
+
+    --g-color-function-box-caption-fg: #FFFFFF; /* White remains for contrast */
+    --g-color-function-box-caption-bg: #d65f12; /* Deep orange, analogous to original dark purple */
+    --g-color-function-box-caption-outline: #8a3c09; /* Darker shade for outlines */
+    --g-color-function-box-contents: hsl(24deg, 70.97%, 86.73%); /* Light orange with the same saturation and lightness as the original */
+
+    --g-color-flock-box-caption-fg: #FFFFFF; /* White for foreground text */
+    --g-color-flock-box-caption-bg: #b24e11; /* Darker orange, keeping the contrast similar */
+
+    --g-color-reference-display-bg: hsl(16deg, 47%, 84%); /* Soft orange for background */
+    --g-color-reference-display-fg: black; /* Black remains for readability */
+    --g-color-reference-display-selected-bg: hsl(15deg, 100%, 97%); /* Very light orange for selected items */
+
+    /* Extended definitions with red and orange hues */
+    --g-color-sidebar-bg: #e6d0c3; /* Lighter shade of the body-bg with an orange tint */
+    --g-color-sidebar-fg: #cc7745; /* Desaturated orange for text */
+
+    --g-color-button-fg: #FFFFFF; /* Consistent with other foreground elements */
+    --g-color-button-bg: #e35d1a; /* Vibrant orange for buttons */
+    --g-color-button-hover-bg: #c75216; /* A slightly darker shade for hover state */
+
+    --g-color-footer-bg: #deb7a4; /* Light orange, softer than sidebar-bg */
+    --g-color-footer-fg: #8a3c09; /* Dark orange, matches function-box-caption-outline */
+
+    --g-color-link-fg: #f07c2d; /* Orange, identical to list-header-bg for consistency */
+    --g-color-link-hover-fg: #d65f12; /* Darker orange for hover, similar to function-box-caption-bg */
+}

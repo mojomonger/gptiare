@@ -1,6 +1,17 @@
 @import url("iari_custom_defaults.css");
 /*@import url("__custom__/iare_custom_v1.css");*/
-@import url("__custom__/iare_custom_v2.aigen_green.css");
+/*@import url("__custom__/iare_custom_v2.aigen_green.css");*/
+/*@import url("__custom__/iare_custom_v3.css");*/
+
+/* Use pinks and blues */
+@import url("__custom__/iare_custom_v4.css");
+
+/* Use colors of the forest */
+/*@import url("__custom__/iare_custom_v5.css");  */
+
+/* Use a film noir color scheme */
+/*@import url("__custom__/iare_custom_v5.css");  */
+
 
 :root {
     --color-debug-background: #b4df5e;

@@ -1,0 +1,20 @@
+:root {
+    --g-color-h1-fg: #ff00ff; /* Vibrant pink for headings */
+
+    --g-color-body-bg: #00ffff; /* Cyan, a mix of blue and green for body background */
+
+    --g-color-list-header-fg: #ffccff; /* Light pink for list header foreground */
+    --g-color-list-header-bg: #0066ff; /* Bright blue for list header background */
+
+    --g-color-function-box-caption-fg: #FFFFFF; /* White for contrast against the function box caption background */
+    --g-color-function-box-caption-bg: #cc00ff; /* Deep pink for function box caption background */
+    --g-color-function-box-caption-outline: #0000ff; /* Classic blue for outline */
+    --g-color-function-box-contents: hsl(250deg, 100%, 75%); /* Bright lavender for contents, maintaining saturation and lightness */
+
+    --g-color-flock-box-caption-fg: #FFFFFF; /* White, providing contrast with the flock box caption background */
+    --g-color-flock-box-caption-bg: #3300ff; /* Deep blue for flock box caption background */
+
+    --g-color-reference-display-bg: hsl(240, 100%, 80%); /* Light blue for reference display background */
+    --g-color-reference-display-fg: black; /* Black for reference display foreground, ensuring readability */
+    --g-color-reference-display-selected-bg: hsl(300, 100%, 90%); /* Very light pink for selected reference display background */
+}
