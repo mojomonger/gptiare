@@ -1,0 +1,20 @@
+:root {
+    --g-color-body-bg: #2b2b2b; /* A deep grey for the body background to ensure text stands out clearly. */
+
+    --g-color-h1-fg: #ff8c00; /* A vibrant orange for headings to grab attention. */
+
+    --g-color-list-header-fg: #f5f5f5; /* A light grey for list header text to ensure readability against a darker background. */
+    --g-color-list-header-bg: #424242; /* A medium grey for list header backgrounds, providing a subtle contrast. */
+
+    --g-color-function-box-caption-fg: #FFFFFF; /* White remains for contrast against darker backgrounds. */
+    --g-color-function-box-caption-bg: #ff4500; /* A deep orange for function box captions, ensuring visibility and interest. */
+    --g-color-function-box-caption-outline: #ff4500; /* The same deep orange for outlines to maintain consistency and focus. */
+    --g-color-function-box-contents: hsl(30deg, 100%, 80%); /* A very light orange for box contents, offering a softer appearance while ensuring readability. */
+
+    --g-color-flock-box-caption-fg: #FFFFFF; /* White, for clarity and contrast. */
+    --g-color-flock-box-caption-bg: #ff8c00; /* A medium vibrant orange for a striking contrast and thematic consistency. */
+
+    --g-color-reference-display-bg: #383838; /* A dark grey for reference display backgrounds, enhancing the visibility of foreground content. */
+    --g-color-reference-display-fg: #e0e0e0; /* A very light grey for text, ensuring it pops against the darker background. */
+    --g-color-reference-display-selected-bg: #4f4f4f; /* A slightly lighter grey for selected items, subtly highlighting them. */
+}

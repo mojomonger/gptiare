@@ -1,0 +1,20 @@
+:root {
+    --g-color-body-bg: #333333; /* Dark grey, ensures good contrast with lighter elements */
+
+    --g-color-h1-fg: #E6E600; /* A bright yellow for headings, distinguishable for most types of color blindness */
+
+    --g-color-list-header-fg: #CCCCCC; /* Light grey for list headers foreground, ensures good readability */
+    --g-color-list-header-bg: #555555; /* A slightly lighter shade of grey for background, maintains contrast */
+
+    --g-color-function-box-caption-fg: #FFFFFF; /* White remains for contrast */
+    --g-color-function-box-caption-bg: #0080FF; /* Bright blue for function box captions, visible to most with color vision deficiencies */
+    --g-color-function-box-caption-outline: #FFA500; /* Orange for outlines, offers a good contrast and is generally distinguishable */
+    --g-color-function-box-contents: hsl(210deg, 100%, 40%); /* A darker blue for contents, maintaining readability and appeal */
+
+    --g-color-flock-box-caption-fg: #FFFFFF; /* White, for contrast and visibility */
+    --g-color-flock-box-caption-bg: #00FF00; /* Bright green, but used sparingly and in large blocks to avoid confusion with other colors */
+
+    --g-color-reference-display-bg: hsl(0, 0%, 50%); /* Medium grey, for background, ensures that text stands out */
+    --g-color-reference-display-fg: #000000; /* Black for text, maximum contrast with the background */
+    --g-color-reference-display-selected-bg: hsl(0, 0%, 70%); /* Lighter grey for selected items, ensures distinguishability */
+}
