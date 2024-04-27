@@ -3,23 +3,5 @@
 /* global definitions */
 
 :root {
-    --g-color-h1-fg: #7b1fa2;
-
-    --g-color-body-bg: #F8BBD0;
-
-    --g-color-list-header-fg: #4a148c;
-    --g-color-list-header-bg: #e57373;
-
-    --g-color-function-box-caption-fg: #FFFFFF;
-    --g-color-function-box-caption-bg: #8e24aa;
-    --g-color-function-box-caption-outline: #6a1b9a;
-    --g-color-function-box-contents: hsl(294, 71%, 89%);
-
-    --g-color-flock-box-caption-fg: #FFFFFF;
-    --g-color-flock-box-caption-bg: #8e24aa;
-
-    --g-color-reference-display-bg: hsl(327, 56%, 84%);
-    --g-color-reference-display-fg: #4a148c;
-    --g-color-reference-display-selected-bg: #f0bbff;
 }
 
