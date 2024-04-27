@@ -217,6 +217,8 @@
     border-right: var(--width-cell-border);
     border-right-color: var(--color-cell-border);
 }
+
+
 .url-row .url-status {
     text-align: center;
     width: var(--width-url-status);
@@ -329,7 +331,8 @@
     height:var(--height-check-icon-list);
     /*content: url('../../images/no_x.png');*/
     /*content: url('../../images/wbm.link.no.png');*/
-    content: url('../../images/wbm.link.ex.png');
+    /*content: url('../../images/wbm.link.ex.png');*/
+    content: url('../../images/wbm.link.ex.grey.v3.png');
 }
 
 
@@ -480,7 +483,7 @@ h4.url-flock-caption {
 
 button.utility-button.disabled {
     background-color: #e4e4e4 !important;
-    color: #a6a6a6 !important;
+    /*color: #a6a6a6 !important;*/
     border-color: #a6a6a6 !important;
     cursor: inherit;
 }

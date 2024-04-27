@@ -1,28 +1,17 @@
 # Internet Archive Reference Explorer (IARE) App
 
-_This document is under development._
-
-This project uses the React.js framework.
+This project uses the React.js framework.\
 
 ## Development Scripts
 
 Builds are accomplished with standard node/React scripts.
-
-Specify the PORT for your app to by setting the 
-PORT environment variable in the .env file in the
-root directory of the project. 
-```
-PORT=3001
-```
 
 From the project directory:
 
 ### `npm start`
 
 Runs the IARE app in development mode.\
-For this GPT version of IARE, the app is deployed on PORT 3001.\
-Open [http://localhost:3001](http://localhost:3000) to view it in your browser.\
-
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Changes made in the source code automatically reloads the page.\
 Any lint errors found during compilation are shown in the console.
@@ -47,16 +36,16 @@ https://internetarchive.github.io/iare/
 Build a deployment Docker image:
 
 ```
-$ docker image build -t iare .
+$ docker image build -t jsonview .
 ```
 
 Run a container from the newly built image:
 
 ```
-$ docker container run --rm -it -p 3000:3000 iare
+$ docker container run --rm -it -p 3000:3000 jsonview
 ````
 
-If you are running this locally, you can open the application in a web browser at http://localhost:3000
+Open the application in a web browser at http://localhost:3000
 
 ## Under the Hood
 
@@ -77,21 +66,22 @@ represent a reference, use "_ref"...I found this out the hard way!
 * Chart.js
 * react-chartjs-2
 * chart.js/helpers
+
 * chart.js options
 * chartjs-plugin-datalabels
 
 ### React Component Architecture
 
-When page article data is first received from the fetch, it is rendered with the src/PageDisplay component, eventually resolving to the src/v2/PageDisplayV2 component for typical wiki pages.
+When page data is received from the fetch, it is rendered with the src/PageDisplay component, eventually resolving to the src/v2/PageDisplayV2 component for typical wiki pages.
 
-The PageDisplayV2 contains the PageInfo component, to display some top-level information about the page retrieval, and the PageData component, which does the actual work of showing the retrieved page data.
+The PageDisplayV2 contains the PageInfo component, to display some top-level information about the page retrieval, and the PageData component, which does the actual work of displaying the retrieved page data.
 
 ```
 <PageDisplayV2>
     <PageInfo pageData={pageData} />
     <PageData pageData={pageData} />
 ```
-Within the PageData component, the raw data is massaged and decorated with anything needed for further rendering. These decorationg actions include:
+Within the PageData component, the data is massaged and decorated with anything that is needed for further rendering. Actions include:
 - fetching the status code of all the URLs
 - transforming the references so that they can be filtered and displayed in a more comfortable manner.
 
