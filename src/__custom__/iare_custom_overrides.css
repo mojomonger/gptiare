@@ -2,6 +2,26 @@
 
 /* global definitions */
 
-:root {
-}
+/*:root {*/
+/*}*/
 
+:root {
+    --g-color-h1-fg: #ff4040;
+
+    --g-color-body-bg: #FFFFFF;
+
+    --g-color-list-header-fg: #404040;
+    --g-color-list-header-bg: #ffcbdd;
+
+    --g-color-function-box-caption-fg: #FFFFFF;
+    --g-color-function-box-caption-bg: #ff80c0;
+    --g-color-function-box-caption-outline: #ff66b2;
+    --g-color-function-box-contents: hsl(330, 23%, 97%);
+
+    --g-color-flock-box-caption-fg: #FFFFFF;
+    --g-color-flock-box-caption-bg: #ff80c0;
+
+    --g-color-reference-display-bg: hsl(330deg, 65%, 81%);
+    --g-color-reference-display-fg: black;
+    --g-color-reference-display-selected-bg: #eec6e6;
+}
